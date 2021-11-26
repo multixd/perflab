@@ -105,18 +105,18 @@ for (int i = 0; i < Ni; ++i) {
 return;
 }
 if( S==20) {
-for(int xx = 0; xx < S; xx+=4) {
+for(int xx = 0; xx < S; xx+=5) {
 for(int i = 0; i < Ni; ++i) {
 
 
-        for(int x = xx; x <xx+4; ++x) {
-	for(int yy = 0; yy < S; yy+=4){
+        for(int x = xx; x <xx+5; ++x) {
+	for(int yy = 0; yy < S; yy+=5){
                 for(int j = 0; j < Nj; ++j) {
 
-                        for(int y =yy; y <yy+4; ++y) {
-				for(int zz = 0; zz < S; zz+=4) {
+                        for(int y =yy; y <yy+5; ++y) {
+				for(int zz = 0; zz < S; zz+=5) {
                                 for(int k = 0; k < Nk; ++k) {
-                                        for(int z = zz; z <zz+4; ++z) {
+                                        for(int z = zz; z <zz+5; ++z) {
 		
                                                 Out[i][j][k] += In[i+x][j+y][k+z] * Stencil[x][y][z];
                                         }
